@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate angular2_es6_rails Thing
+
+    This will create:
+        what/will/it/create

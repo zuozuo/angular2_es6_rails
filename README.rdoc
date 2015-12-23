@@ -1,0 +1,3 @@
+= Angular2Es6Rails
+
+This project rocks and uses MIT-LICENSE.
