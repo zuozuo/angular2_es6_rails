@@ -6,7 +6,11 @@ class Angular2Es6RailsGenerator < Rails::Generators::NamedBase
 	end
 
 	def copy_babelrc
-		copy_file 'babelrc', ".babelrc"
+		copy_file 'babelrc', '.babelrc'
+	end
+
+	def copy_gulpfile
+		copy_file 'gulpfile.babel.js', 'gulpfile.babel.js'
 	end
 
 	def config_browserify
