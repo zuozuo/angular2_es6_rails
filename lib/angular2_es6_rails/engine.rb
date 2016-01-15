@@ -5,6 +5,9 @@ module Angular2Es6Rails
 end
 
 Gem.loaded_specs['angular2_es6_rails'].dependencies.each do |d|
-  require d.name
+	begin
+		require d.name
+	rescue Exception => e
+		puts e
+	end
 end
-

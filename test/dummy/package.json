@@ -1,0 +1,44 @@
+{
+  "name": "babel-angular2-app",
+  "version": "0.0.1",
+  "description": "A skeleton Angular 2 app built with babel.",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "gulp clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
+  "repository": "shuhei/babel-angular2-app",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.21",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-plugin-angular2-annotations": "^3.1.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.3.15",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "babelify": "^7.2.0",
+    "babylon": "^6.3.25",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "babel-polyfill": "^6.3.14",
+    "browserify": "^12.0.1",
+    "browserify-incremental": "^3.0.1",
+    "coffeeify": "^2.0.1",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "0.5.10"
+  }
+}
