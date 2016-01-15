@@ -32,8 +32,13 @@ class Angular2Es6RailsGenerator < Rails::Generators::NamedBase
 	end
 
 	def require_index_js
-		puts "      add require('./index.js') to app/assets/javascripts/application.js"
-		gsub_file 'app/assets/javascripts/application.js', '//= require_tree .', "require('./index.js')"
+		path = 'app/assets/javascripts/application.js'
+		if File.exists?(path)
+			puts "      add require('./index.js') to #{path}"
+			gsub_file path, '//= require_tree .', "require('./index.js')"
+		else
+			puts "      didn't find #{path} please require index.js in your global js file "
+		end
 	end
 
 end
